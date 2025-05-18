@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 2rem;
+  background: #f9f9f9;
+  color: #333;
+}
+
+h1, h2 {
+  color: #2c3e50;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0.5rem 1rem 0;
+  cursor: pointer;
+  border: 1px solid #3498db;
+  background-color: #3498db;
+  color: white;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+#hover-box {
+  width: 200px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  border: 2px solid #e67e22;
+  background-color: #f39c12;
+  color: white;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+#hover-box.hovered {
+  background-color: #d35400;
+}
+
+.slideshow-container img {
+  width: 250px;
+  height: 300px;
+  border-radius: 8px;
+  transition: opacity 0.5s ease;
+}
+
+.tabs {
+  margin-top: 1rem;
+}
+
+.tab-btn {
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  border: 1px solid #34495e;
+  background-color: #dde9ec;
+  cursor: pointer;
+  border-radius: 4px 4px 0 0;
+  transition: background-color 0.3s ease;
+}
+
+.tab-btn.active {
+  background-color: #34495e;
+  color: white;
+}
+
+.tab-content {
+  border: 1px solid #34495e;
+  padding: 1rem;
+  border-radius: 0 4px 4px 4px;
+  background-color: white;
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+}
+
+
+#form-message {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+input:valid {
+  border-color: green;
+}

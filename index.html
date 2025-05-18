@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JavaScript Event Handling & Interactive Elements</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Welcome to Kelvin's Ultimate JS Playground 🎉</h1>
+
+  <!-- 1. Event Handling -->
+  <section id="event-handling">
+    <h2>Event Handling 🎈</h2>
+
+    <button id="click-btn">Click me!</button>
+    <button id="color-change-btn">Change my color</button>
+    <div id="hover-box">Hover over me!</div>
+    <input id="keypress-input" type="text" placeholder="Type something..." />
+    <p id="keypress-feedback"></p>
+  </section>
+
+  <!-- 2. Interactive Elements -->
+  <section id="interactive-elements">
+    <h2>Interactive Elements 🎮</h2>
+
+    <!-- Image Gallery / Slideshow -->
+    <div class="slideshow-container">
+      <img id="slide-img" src="Kevin Image.jpeg" alt="Kelvin's Image" />
+      <br />
+      <button id="prev-slide">Previous</button>
+      <button id="next-slide">Next</button>
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="tab1">Hobbies</button>
+      <button class="tab-btn" data-tab="tab2">Family Members</button>
+      <button class="tab-btn" data-tab="tab3">My Favorite Meals</button>
+    </div>
+    <div id="tab1" class="tab-content active">
+        <h3>My Hobbies</h3>
+        <ul>
+            <li>Reading</li>
+            <li>Traveling</li>
+            <li>Coding</li>
+        </ul>
+    </div>
+    <div id="tab2" class="tab-content">
+        <h3>My Family Members</h3>
+        <ul>
+            <li>Mom</li>
+            <li>Dad</li>
+            <li>Sister</li>
+        </ul>
+    </div>
+    <div id="tab3" class="tab-content">
+        <h3>My Favorite Meal</h3>
+        <ul>
+            <li>Pizza</li>
+            <li>Burgers</li>
+            <li>Pasta</li>
+    </div>
+  </section>
+
+  <!-- 3. Form Validation -->
+  <section id="form-validation">
+    <h2>Form Validation 📋</h2>
+    <form id="signup-form" novalidate>
+      <label>
+        Name (required):
+        <input type="text" id="name" required />
+        <span class="error" id="name-error"></span>
+      </label>
+      <br />
+
+      <label>
+        Email (required):
+        <input type="email" id="email" required />
+        <span class="error" id="email-error"></span>
+      </label>
+      <br />
+
+      <label>
+        Password (min 8 chars):
+        <input type="password" id="password" required minlength="8" />
+        <span class="error" id="password-error"></span>
+      </label>
+      <br />
+
+      <button type="submit">Submit</button>
+      <p id="form-message"></p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
